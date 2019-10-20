@@ -1,0 +1,193 @@
+<!-- Login Page -->
+
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <!--  Bootstrap Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="login-box">
+        <img src="avatar.png" class="avatar">
+        <!-- Login Page -->
+        <h3>Login to get in</h3>
+        <form>
+            <p>Username:</p>
+            <input type="text" id="username" placeholder="Enter username"><br>
+            <p>Password</p>
+            <input type="password" id="password" placeholder="Enter password"><br>
+            <input type="radio" name="role" value="student"> Student
+            <input type="radio" name="role" value="faculty"> Faculty
+            <input type="radio" name="role" value="admin"> Admin <br>
+            <input type="button" id="login" value="Login">
+            <input type="button" id="display" value="Display Courses"><br>
+            <div id="displayCourses"></div>
+        </form>
+    </div>
+
+    <!-- Admin Page -->
+    <div class="admin-box" style="display:none;">
+        <h2>Welcome Admin</h2>
+        <input type="button" class="logout" value="logout">
+        <div>
+            <ul>
+                <li><a href="#student" class="allStudents">View All Students</a></li>
+                <li><a href="#faculty" class="allFaculty">View All Faculty</a></li>
+                <li><a href="#admin" class="allAdmins">View All Admin</a></li>
+                <li><a href="#courses" class="allCourses">View All Courses</a></li>
+            </ul>
+        </div>
+        <div class="displayContent"></div>
+
+        <div style="display: flex;">
+            <form class="addStudentForm">
+                First name:<br>
+                <input type="text" name="firstname" placeholder="Enter first name">
+                <br>
+                Last name:<br>
+                <input type="text" name="lastname" placeholder="Enter last name">
+                <br>
+                Phone Number:<br>
+                <input type="text" name="phonenumber" placeholder="Enter phone number">
+                <br>
+                Student ID:<br>
+                <input type="text" name="studentid" placeholder="Enter the Student ID">
+                <br>
+                Password:<br>
+                <input type="text" name="password" placeholder="Enter default Password">
+                <br>
+                Role:<br>
+                <input type="text" name="role" placeholder="Enter the role">
+                <br>
+                Entry Year:<br>
+                <input type="text" name="entryyear" placeholder="Enter the year joined">
+                <br>
+                GPA:<br>
+                <input type="text" name="gpa" placeholder="Enter the GPA">
+                <br>
+                <input type="button" class="addStudent" value="Add Student">
+            </form>
+
+            <form class="addCourseFormAdmin">
+                Course ID:<br>
+                <input type="text" name="courseID" placeholder="Enter the Course Id">
+                <br>
+                Course Name:<br>
+                <input type="text" name="courseName" placeholder="Enter the Course Name">
+                <br>
+                Course Code:<br>
+                <input type="text" name="courseCode" placeholder="Enter the Course Code">
+                <br>
+                <input type="button" class="addCourse" value="Add Course"><br>
+            </form>
+            <form class="addFacultyForm">
+                First name:<br>
+                <input type="text" name="firstname" placeholder="Enter first name">
+                <br>
+                Last name:<br>
+                <input type="text" name="lastname" placeholder="Enter last name">
+                <br>
+                Phone Number:<br>
+                <input type="text" name="phonenumber" placeholder="Enter phone number">
+                <br>
+                Faculty ID:<br>
+                <input type="text" name="facultyid" placeholder="Enter the Faculty ID">
+                <br>
+                Password:<br>
+                <input type="text" name="password" placeholder="Enter default Password">
+                <br>
+                Role:<br>
+                <input type="text" name="role" placeholder="Enter the role">
+                <br>
+                Department:<br>
+                <input type="text" name="department" placeholder="Enter the department">
+                <br>
+                <input type="button" class="addFaculty" value="Add Faculty">
+            </form>
+            <form class="addAdminForm">
+                First name:<br>
+                <input type="text" name="firstname" placeholder="Enter first name">
+                <br>
+                Last name:<br>
+                <input type="text" name="lastname" placeholder="Enter last name">
+                <br>
+                Phone Number:<br>
+                <input type="text" name="phonenumber" placeholder="Enter phone number">
+                <br>
+                Admin ID:<br>
+                <input type="text" name="adminid" placeholder="Enter the Admin ID">
+                <br>
+                Password:<br>
+                <input type="text" name="password" placeholder="Enter default Password">
+                <br>
+                Role:<br>
+                <input type="text" name="role" placeholder="Enter the role">
+                <br>
+                <input type="button" class="addAdmin" value="Add Admin">
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Faculty Page -->
+    <div class="faculty-box" style="display:none;">
+        <h2>Welcome Faculty</h2>
+        <input type="button" class="logout" value="logout">
+        <div>
+            <ul>
+                <li><a href="#student" class="allStudents">View All Students</a></li>
+                <li><a href="#faculty" class="allFaculty">View All Faculty</a></li>
+                <li><a href="#courses" class="allCourses">View All Courses</a></li>
+            </ul>
+        </div>
+
+        <div class="displayContent"></div>
+
+        <form class="addCourseFormFaculty">
+            Course ID:<br>
+            <input type="text" name="courseId" placeholder="Enter the Course Id">
+            <br>
+            Course Name:<br>
+            <input type="text" name="courseName" placeholder="Enter the Course Name">
+            <br>
+            Course Code:<br>
+            <input type="text" name="courseCode" placeholder="Enter the Course Code">
+            <br>
+            <input type="button" class="addCourse" value="Assign Course"><br>
+        </form>
+    </div>
+
+    <!-- Student Page -->
+    <div class="student-box" style="display:none;">
+        <h2>Welcome Student</h2>
+        <input type="button" class="logout" value="logout">
+        <div>
+            <ul>
+                <li><a href="#courses" class="allCourses">View My Courses</a></li>
+            </ul>
+        </div>
+
+        <div class="displayContent"></div>
+    </div>
+    <script src="course.js"></script>
+    <script src="person.js"></script>
+    <script src="student.js"></script>
+    <script src="admin.js"></script>
+    <script src="faculty.js"></script>
+    <script src="app.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> -->
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"> -->
+    </script>
+</body>
+
+</html>

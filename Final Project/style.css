@@ -1,0 +1,221 @@
+ body {
+     margin: 0;
+     padding: 0;
+     /* background:; */
+     background-size: cover;
+     background-position: center;
+     font-family: sans-serif;
+ }
+
+ .login-box {
+     width: 320px;
+     height: 420px;
+     background: rgba(223, 178, 31, 0.5);
+     color: #fff;
+     top: 50%;
+     left: 50%;
+     position: absolute;
+     transform: translate(-50%, -50%);
+     box-sizing: border-box;
+     padding: 70px 30px;
+ }
+
+ .avatar {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     position: absolute;
+     top: -50px;
+     left: calc(50% - 50px);
+ }
+
+ h2 {
+     margin: 0;
+     padding: 0 0 20px;
+     text-align: center;
+     font-size: 22px;
+     background: darkgoldenrod;
+ }
+
+ .login-box p {
+     margin: 0;
+     padding: 0;
+     font-weight: bold;
+ }
+
+ .login-box input {
+     width: auto;
+     margin-bottom: 20px;
+ }
+
+ .login-box input[type="text"],
+ input[type="password"] {
+     border: none;
+     border-bottom: 1px solid #fff;
+     background: transparent;
+     outline: none;
+     height: 40px;
+     color: #fff;
+     font-size: 16px;
+ }
+
+ #login {
+     border: none;
+     outline: none;
+     height: 40px;
+     background: #1c8adb;
+     color: #fff;
+     font-size: 18px;
+     border-radius: 20px;
+ }
+
+ #login:hover {
+     cursor: pointer;
+     background: #39dc79;
+     color: #000;
+ }
+
+ #display {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+#display:hover {
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+ .logout {
+     font-family: sans-serif, 'Times New Roman', Times, serif;
+     position: absolute;
+     top: 0;
+     right: 0;
+     outline: none;
+     height: 40px;
+     background: #1c8adb;
+     color: #fff;
+     font-size: 18px;
+     border-radius: 20px;
+ }
+
+ .logout:hover {
+     cursor: pointer;
+     background: #39dc79;
+     color: #000;
+ }
+
+ .addStudent {
+     font-family: sans-serif, 'Times New Roman', Times, serif;
+     outline: none;
+     height: 40px;
+     background: #1c8adb;
+     color: #fff;
+     font-size: 18px;
+     border-radius: 20px;
+     text-align: center;
+
+ }
+
+ .addStudent:hover {
+     cursor: pointer;
+     background: #39dc79;
+     color: #000;
+ }
+
+ .addFaculty {
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.addFaculty:hover {
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+.addAdmin {
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.addAdmin:hover {
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+
+
+ ul {
+     list-style-type: none;
+     text-align: left;
+     margin: 50;
+     padding: 50;
+ }
+
+ li {
+     float: left;
+ }
+
+ .displayContent
+ {
+     clear:both;
+     font-family: sans-serif, 'Times New Roman', Times, serif;
+     height: 40px;
+     color:black;
+     font-size: 25px;
+     border-radius: 20px;
+     text-align: center;
+
+
+ }
+
+ li a {
+     display: block;
+     padding: 8px;
+     background-color: #1c8adb;
+     color: white;
+ }
+
+ li a:hover {
+     cursor: pointer;
+     background: #39dc79;
+     color: #000;
+ }
+
+ .addCourse {
+     font-family: sans-serif, 'Times New Roman', Times, serif;
+     outline: none;
+     height: 40px;
+     background: #1c8adb;
+     color: #fff;
+     font-size: 18px;
+     border-radius: 20px;
+     text-align: center;
+ }
+
+ .addCourse:hover {
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
